@@ -9,22 +9,22 @@ eureka:
     preferIpAddress: true
     
 spring:
-    application:
-        exchange: order.events.fanout.exchange
-        queue: order.default.queue
-        databaseName: order
-        eventsCollectionName: events
-        snapshotCollectionName: snapshots
-    rabbitmq:
-        hostname: localhost
-        username: guest
-        password: guest
-    data:
-        mongodb:
-            uri: mongodb://localhost:27017/order
+  application:
+    exchange: order.events.fanout.exchange
+    queue: order.default.queue
+    databaseName: order
+    eventsCollectionName: events
+    snapshotCollectionName: snapshots
+  rabbitmq:
+    hostname: localhost
+    username: guest
+    password: guest
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/order
 logging:
-    level:
-        root: INFO
-        org.springframework: INFO
-        org.axonframework: INFO
-    file: ./build/logs/order-service.log
+  level:
+    root: INFO
+    org.springframework: INFO
+    org.axonframework: INFO
+  file: ./build/logs/order-service.log
