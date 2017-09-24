@@ -10,7 +10,7 @@ eureka:
     
 spring:
     application:
-        exchange: product.events.fanout.exchange
+        exchange: order.events.fanout.exchange
         queue: order.default.queue
         databaseName: order
         eventsCollectionName: events
