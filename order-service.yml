@@ -1,6 +1,5 @@
 message: Order Service
 
-#debug: true
 eureka:
   client:
     serviceUrl:
@@ -10,8 +9,8 @@ eureka:
     
 spring:
     application:
-        exchange: product.events.fanout.exchange
-        queue: product.default.queue
+        exchange: order.events.fanout.exchange
+        queue: order.default.queue
         eventsCollectionName: events
         snapshotCollectionName: snapshots
     rabbitmq:
@@ -25,4 +24,4 @@ logging:
         org.springframework: INFO
         org.axonframework: INFO
         com.cloudnative.reference: INFO
-    file: ./build/logs/command-side-server.log
+    file: ./build/logs/order-service.log
