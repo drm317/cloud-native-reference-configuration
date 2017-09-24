@@ -6,17 +6,10 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     preferIpAddress: true
-    
-spring:
-    application:
-        exchange: order.events.fanout.exchange
-        queue: order.default.queue
-        eventsCollectionName: events
-        snapshotCollectionName: snapshots
-    rabbitmq:
-        hostname: localhost
-        username: guest
-        password: guest
+
+axon:
+    amqp:
+        exchange: order
 
 logging:
     level:
