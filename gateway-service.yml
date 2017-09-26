@@ -5,7 +5,7 @@ ribbon:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://service-registry:8761/eureka/
+      defaultZone: http://locahost:8761
   instance:
     preferIpAddress: true
 
