@@ -10,9 +10,6 @@ eureka:
     preferIpAddress: true
 
 zuul:
-  routes:
-    order-service:
-      path: /order-commands/**
   debug:
     request: true
     response: true
