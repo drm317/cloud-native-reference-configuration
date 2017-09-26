@@ -1,4 +1,3 @@
-
 ribbon:
   eureka:
     enabled: true
@@ -12,10 +11,8 @@ eureka:
 
 zuul:
   routes:
-    product-command-side:
-      path: /commands/**
-    product-query-side:
-      path: /queries/**
+    order-service:
+      path: /order-commands/**
   debug:
     request: true
     response: true
