@@ -10,15 +10,16 @@ eureka:
     preferIpAddress: true
 
 zuul:
-  routes:
-    order-service:
-      path: /order-commands/**
   debug:
     request: true
     response: true
 
 logging:
-    level:
-        root: INFO
-        org.springframework: INFO
-        com.netflix.niws.client.http: DEBUG
+  level:
+    root: INFO
+    org.springframework: INFO
+    com.netflix.niws.client.http: DEBUG
+        
+management:
+  security:
+    enabled: false
