@@ -28,3 +28,7 @@ logging:
     org.springframework: INFO
     org.axonframework: INFO
   file: ./build/logs/order-service.log
+  
+management:
+  security:
+    enabled: false
