@@ -8,8 +8,10 @@ eureka:
       defaultZone: http://service-registry:8761/eureka
   instance:
     preferIpAddress: true
-
+    
 zuul:
+  routes:
+    order-service: /os/**
   debug:
     request: true
     response: true
