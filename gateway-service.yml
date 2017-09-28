@@ -12,6 +12,7 @@ eureka:
 zuul:
   routes:
     order-service: /os/**
+    gateway-service: /gs/**
   debug:
     request: true
     response: true
