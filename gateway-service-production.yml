@@ -13,6 +13,7 @@ zuul:
   routes:
     order-service: /os/**
     gateway-service: /gs/**
+    order-query-service: /oqs/**
   debug:
     request: true
     response: true
