@@ -1,0 +1,32 @@
+message: Order Query Service
+
+#debug: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://service-registry:8761/eureka/
+  instance:
+    preferIpAddress: true
+    
+spring:
+  application:
+    exchange: order.events.fanout.exchange
+    queue: event.stream
+    terminal: order.axon.terminal
+  rabbitmq:
+    hostname: rabbitmq
+    username: guest
+    password: guest
+  data:
+    rest:
+    
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+    org.axonframework: INFO
+  file: ./build/logs/order-query-service.log
+  
+management:
+  security:
+    enabled: false
