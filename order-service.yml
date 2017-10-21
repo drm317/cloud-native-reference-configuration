@@ -12,7 +12,7 @@ spring:
   application:
     exchange: order.events.fanout.exchange
     queue: order.default.queue
-    databaseName: order
+    databaseName: orders
     eventsCollectionName: events
     snapshotCollectionName: snapshots
   rabbitmq:
@@ -21,7 +21,7 @@ spring:
     password: guest
   data:
     mongodb:
-      uri: mongodb://localhost:27017/order
+      uri: mongodb://localhost:27017/orders
 logging:
   level:
     root: INFO
