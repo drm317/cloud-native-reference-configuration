@@ -25,6 +25,7 @@ logging:
     root: INFO
     org.springframework: INFO
     org.axonframework: INFO
+    com.cloudnative.reference: INFO
   file: ./build/logs/order-query-service.log
   
 management:
